@@ -18,7 +18,7 @@ browser <----> cache <-----> nginx
 ----------------nginx conf example------------------
     location ~ (.jpg|.png|.gif) {
         root /home/webuser/www/views/static;
-	access_by_lua_file  /home/webuser/www/module/resizeimg.lua;
+	access_by_lua_file  /home/webuser/www/module/thumbnail.lua;
 	expires 30d;
         }
   
